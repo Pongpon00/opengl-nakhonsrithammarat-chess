@@ -7,3 +7,6 @@
 [submodule "external/glm"]
 	path = external/glm
 	url = https://github.com/g-truc/glm.git
+[submodule "external/chesslib"]
+	path = external/chesslib
+	url = https://github.com/Disservin/chess-library.git
