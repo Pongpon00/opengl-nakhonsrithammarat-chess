@@ -25,9 +25,9 @@ target_include_directories(glad PUBLIC external/glad/include)
 # Find OpenGL in a cross-platform way
 find_package(OpenGL REQUIRED)
 
-# Chess logic library (header-only) provided as a git submodule in external/libchess
+# Chess logic library (header-only) provided as a git submodule in external/chesslib
 add_library(libchess_headers INTERFACE)
-target_include_directories(libchess_headers INTERFACE external/libchess/include)
+target_include_directories(libchess_headers INTERFACE external/chesslib/include)
 
 file(GLOB SRC_FILES
     src/*.cpp
