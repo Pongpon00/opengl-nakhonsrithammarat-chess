@@ -4,6 +4,8 @@ project(3DChessFPS)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
+
 # Dependencies built from source
 add_subdirectory(external/glfw)
 add_subdirectory(external/assimp)
