@@ -9,6 +9,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
 # Dependencies built from source
 add_subdirectory(external/glfw)
 add_subdirectory(external/assimp)
+add_subdirectory(external/hidapi-master)
 
 # Header/include paths
 include_directories(
@@ -17,6 +18,7 @@ include_directories(
     external/glm
     external/stb
     external/assimp/include
+    external/hidapi-master/hidapi
     src
 )
 
@@ -47,4 +49,5 @@ target_link_libraries(3DChessFPS
 	assimp
 	libchess_headers
 	OpenGL::GL
+    hidapi::hidapi
 )
